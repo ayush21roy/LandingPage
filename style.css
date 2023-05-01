@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background: linear-gradient(270deg,#8fc38f 50% ,#8fc38f 50%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body .container{
+    background-image: url(/images/recycle.bg1.png);
+}
+.wrapper{
+    background-color: #e4eed0;
+    width: 90%;
+    height: 80vh;
+}
+
+.navbar .logo{
+    /* background-color: yellow; */
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
+    border: 3px solid #538c53;
+    border-radius: 50%;
+    border-right: transparent;
+    /* for pseudo-element .navbar .logo::before */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 15px;
+
+}
+
+.navbar, .navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.navlist li{
+    list-style: none;
+    padding: 20px;
+}
+
+.navlist a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+
+.navbar .logo::before{
+    content: "Remine~India";
+    color: black;
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;   
+}
+
+.navlist a::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    bottom: -10px;
+    width: 0;
+    height: 2px;  
+}
+
+.navlist a:hover::before{
+    width: 100%;
+    transition: .5s ease-in-out;
+}
+
+.hero img{
+    transform: rotate(270deg);
+    padding: 20px 10px;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px;
+    border-left: 4px solid #016001;
+}
+
+.content h1{
+    color: #016001;
+    letter-spacing: 5px;
+    text-shadow: 2.25px 1.12px #9c9c50;
+}
+
+.content h3{
+    color: #42781e;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-left: 2px;
+}
+
+.content p{
+    line-height: 22px;
+}
+
+.content span{
+    margin-top: 8px;
+    margin-left: 200px;
+}
+.content button{
+    padding: 18px 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #538c53;
+    border-style: none;
+    cursor: pointer;
+}
+
+.content button:hover{
+    color: #538c53;
+    font-weight: bold;
+    background-color: white;
+}
+
+.contain{
+    background-color: #8fc38f;
+    background-image: url(./images/recycle.bg1.png);
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.wrap{
+    background-color: #e4eed0;
+    height: 60vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 50px;
+   
+}
+.cont{
+    /* background-color: white; */
+    position: absolute;
+    left: 200px;
+   line-height: 30px; 
+   border-right: 4px solid #016001;
+   padding-right: 50px;
+   padding-top: 40px;
+   padding-bottom: 40px;
+    
+
+}
+.cont h2{
+    color: #016001;
+    padding-bottom: 12px;
+    word-spacing: 5px;
+}
+.cont li{
+    /* left: 300px; */
+    list-style: none;
+    font-size: 15px;
+    text-align: center;
+}
+.cont span{
+    color: red;
+    font-weight: bold;
+}
+
+.pic{
+    padding-left: 250px;  
+}
+
+.foot{
+    /* background-color: #8fc38f; */
+    background-image: url(./images/footer\ img.png);
+   
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40vh;
+}
+.connect{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: white; */
+    /* padding-top: 50px; */
+     padding-left: 50px;
+     
+}
+.connect, .conn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.conn li{
+    list-style: none;
+    padding: 20px;
+    position: relative;
+    border-radius: 200%;
+}
+
+.conn li:hover{
+    background-color: #538c53;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+
+.headofc{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 270px;
+    line-height: 25px;
+   
+    font-weight: bold;
+}
+
+.headofc h3{
+    font-size: 22px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.headofc p{
+    font-size: 18px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    /* border-bottom: 4px solid #016001;
+    border-bottom-style: ridge; */
+}
+.headofc .contact{
+   
+    font-size: 22px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.headofc li{
+    font-size: 18px;
+    font-weight: bold;
+    list-style: url(/images/resize-1682934169241001498emailIconremovebgpreview.png);
+    
+}
+
